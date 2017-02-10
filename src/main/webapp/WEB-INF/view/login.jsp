@@ -7,11 +7,7 @@
 <title>Insert title here</title>
 </head>
 <body>
-<h2> <center> shoppingcart </center> </h2>
-<center>${msg}</center>
-<hr>
-<a href="login">login</a><br>
-<a href="registration">registration</a>
-
+this is login page
+<h2><center>login page </center></h2>
 </body>
 </html>
