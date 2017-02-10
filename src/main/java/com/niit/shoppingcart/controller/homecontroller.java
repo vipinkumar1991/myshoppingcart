@@ -17,13 +17,17 @@ public class homecontroller {
 	@RequestMapping("/login")
 	public ModelAndView showloginpage() 
 	{
-		ModelAndView mv=new ModelAndView("login");
+		System.out.println("clicked on login page");
+		ModelAndView mv=new ModelAndView("home");
+		mv.addObject("isuserclickedlogin","true");
 		return mv;
 	}
 	@RequestMapping("/registration")
 	public ModelAndView showregistrationpage() 
 	{
-		ModelAndView mv=new ModelAndView("registration");
+		System.out.println("clicked on registration page");
+		ModelAndView mv=new ModelAndView("home");
+		mv.addObject("isuserclickedregistration","true");
 		return mv;
 	}
 }

@@ -12,6 +12,11 @@
 <hr>
 <a href="login">login</a><br>
 <a href="registration">registration</a>
-
+<c:if test ="$(isuserclickedlogin==true)">
+    <jsp:include page="login.jsp"></jsp:include>
+</c:if>  
+<c:if test ="$(isuserclickedregistration==true)">
+    <jsp:include page="registration.jsp"></jsp:include>
+</c:if>   
 </body>
 </html>
