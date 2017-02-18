@@ -30,4 +30,12 @@ public class homecontroller {
 		mv.addObject("isuserclickedregistration","true");
 		return mv;
 	}
+	@RequestMapping("/categorymenu")
+	public ModelAndView showcategorymenupage() 
+	{
+		System.out.println("clicked on categorymenu page");
+		ModelAndView mv=new ModelAndView("home");
+		mv.addObject("isuserclickedcategorymenu","true");
+		return mv;
+	}
 }

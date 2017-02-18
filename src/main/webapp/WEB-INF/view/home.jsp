@@ -21,7 +21,7 @@
       <li class="active"><a href="#">Home</a></li>
       <li><a href="login">Login</a></li>
       <li><a href="registration">Register</a></li>
-      <li><a href="#">Page 3</a></li>
+     
     </ul>
   </div>
 </nav>
@@ -35,7 +35,10 @@
 <c:if test ="${isuserclickedregistration==true}">
     <jsp:include page="registration.jsp"></jsp:include>
 </c:if>   
-
+<c:if test ="${isuserclickedcategorymenu==true}">
+   <jsp:include page="categorymenu.jsp"></jsp:include>
+   
+</c:if>
 </div>
 
 <%-- <h2> <center> shoppingcart </center> </h2>
@@ -58,7 +61,7 @@
     <input type="checkbox" checked="checked"> Remember me
   </div>
 
-  <div class="container" style="background-color:#f1f1f1">
+  <div class="container" style="background-color:green">
     <button type="button" class="cancelbtn">Cancel</button>
     <span class="psw">Forgot <a href="#">password?</a></span>
   </div>
